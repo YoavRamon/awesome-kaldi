@@ -2,10 +2,11 @@
 This is a list of features, scripts, blogs and resources for better using Kaldi (http://kaldi-asr.org/). **Please fill free to contribute by adding more links!**
 
 ## Good resources for beginners:
-1. [how-to-start-with-kaldi-and-speech-recognition](https://towardsdatascience.com/how-to-start-with-kaldi-and-speech-recognition-a9b7670ffff6) - A Medium post (by me) regarding the general structure of the Kaldi project and its different parts. **In my opinion you should start here.**
+1. [How to start with kaldi and speech recognition](https://towardsdatascience.com/how-to-start-with-kaldi-and-speech-recognition-a9b7670ffff6) - A Medium post (by me) regarding the general structure of the Kaldi project and its different parts. **In my opinion you should start here.**
 2. [Kaldi for Dummies tutorial](http://kaldi-asr.org/doc/kaldi_for_dummies.html) - The basic tutorial in the Kaldi documentation. It is really good for "hands on" experience but it is not so well explained.
 3. [How to Train a Deep Neural Net Acoustic Model with Kaldi](http://jrmeyer.github.io/asr/2016/12/15/DNN-AM-Kaldi.html) - A tutorial by Josh Meyer for specifically running Kaldi with DNN
 4. [Building Speech Recognition Systems with the Kaldi Toolkit](https://engineering.jhu.edu/clsp/wp-content/uploads/sites/75/2016/06/Building-Speech-Recognition-Systems-with-the-Kaldi-Toolkit.pdf) - This presentation is extremely long but also extremely helpful. Its the most complete source of information about the training process and its development.
+5. [Eleanor Chodroff Kaldi Tutorial](https://www.eleanorchodroff.com/tutorial/kaldi/) - A good in depth toutorial about the training process with a lot of code examples. 
 
 ## Good resources for more complex stuff:
 1. [Some Kaldi Notes](http://jrmeyer.github.io/asr/2016/02/01/Kaldi-notes.html) - Some advanced notes that is highly recommended to read if you want to be a more trained user.
@@ -33,3 +34,4 @@ There are some open-source projects around that use Kaldi as a platform for buil
 1. [The Kaldi Speech Recognition Toolkit](https://homepages.inf.ed.ac.uk/aghoshal/pubs/asru11-kaldi.pdf) *D. Povey et al., 2011* - The original article that described Kaldi and the different parts of the project. It should be noted that some parts of that article are outdated.
 2. [A time delay neural network architecture for efficient modeling of long
 temporal contexts](https://www.danielpovey.com/files/2015_interspeech_multisplice.pdf) *V. Peddinti, D. Povey, S. Khudanpur, 2015* - The article that describes the usage of TDNNs in Kaldi
+3. [Hybrid speech recognition with Deep Bidirectional LSTM](https://www.cs.toronto.edu/~graves/asru_2013.pdf) *A. Graves, N. Jaitly and A. Mohamed, 2013* - an article about the BLSTM basic recipe in Kaldi.
