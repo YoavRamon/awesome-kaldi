@@ -26,9 +26,11 @@ There are some open-source projects around that use Kaldi as a platform for buil
 2. [kaldi-offline-transcriber](https://github.com/alumae/kaldi-offline-transcriber) - A good example for a project that handles both training and decoding. It is being build for Estonian but can be easily transformed into any language.
 3. [compile Kaldi for android](http://jcsilva.github.io/2017/03/18/compile-kaldi-android/) - You can also compile the Kaldi project in a way that will work directly on android devices. That might not be a good idea with a heavy model, but can be used to more constrained models.
 
-## Resources for understanding the math behind Kaldi better:
+## Resources for understanding the math/science behind Kaldi better:
 1. [Speech Recognition with Weighted Finite-State Transducers](https://cs.nyu.edu/~mohri/pub/hbka.pdf) - The "bible" for understanding WFST-based systems for Speech recognition. **This should probably be your first read.**
 2. [Semirings and WFST](https://www.youtube.com/watch?v=1aEinrlyp8w&list=PLxbPHSSMPBeicXAHVfyFvGfCywRCq39Mp) - A good small course (~3 hours) from Nanyang technological university that covers the idea of WFSTs in a really straight forward and visual way.
+3. [The HTK book](http://www.dsic.upv.es/docs/posgrado/20/RES/materialesDocentes/alejandroViewgraphs/htkbook.pdf) - The HTK book is for another ASR toolkit but it highlihts the basics of speech recognition in a a really intuitive and graphic way.
+4. [A Bit of Progress in Language Modeling](http://www-labs.iro.umontreal.ca/~felipe/IFT6285-Automne2018/resources-2011/Articles/goodman2001.pdf) *J. Goodman, 2011* - The most basic and comprehensive article about the creation of Language-Models
 
 ## Important articles
 1. [The Kaldi Speech Recognition Toolkit](https://homepages.inf.ed.ac.uk/aghoshal/pubs/asru11-kaldi.pdf) *D. Povey et al., 2011* - The original article that described Kaldi and the different parts of the project. It should be noted that some parts of that article are outdated.
