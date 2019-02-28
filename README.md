@@ -6,7 +6,8 @@ This is a list of features, scripts, blogs and resources for better using Kaldi 
 2. [Kaldi for Dummies tutorial](http://kaldi-asr.org/doc/kaldi_for_dummies.html) - The basic tutorial in the Kaldi documentation. It is really good for "hands on" experience but it is not so well explained.
 3. [How to Train a Deep Neural Net Acoustic Model with Kaldi](http://jrmeyer.github.io/asr/2016/12/15/DNN-AM-Kaldi.html) - A tutorial by Josh Meyer for specifically running Kaldi with DNN
 4. [Building Speech Recognition Systems with the Kaldi Toolkit](https://engineering.jhu.edu/clsp/wp-content/uploads/sites/75/2016/06/Building-Speech-Recognition-Systems-with-the-Kaldi-Toolkit.pdf) - This presentation is extremely long but also extremely helpful. Its the most complete source of information about the training process and its development.
-5. [Eleanor Chodroff Kaldi Tutorial](https://www.eleanorchodroff.com/tutorial/kaldi/) - A good in depth toutorial about the training process with a lot of code examples. 
+5. [Eleanor Chodroff Kaldi Tutorial](https://www.eleanorchodroff.com/tutorial/kaldi/) - A good in depth tutorial about the training process with a lot of code examples. 
+6. [Speaker Diarization with Kaldi](https://towardsdatascience.com/speaker-diarization-with-kaldi-e30301b05cc8) - A tutorial about X-Vectors and Speaker Diarization/
 
 ## Good resources for more complex stuff:
 1. [Some Kaldi Notes](http://jrmeyer.github.io/asr/2016/02/01/Kaldi-notes.html) - Some advanced notes that is highly recommended to read if you want to be a more trained user.
