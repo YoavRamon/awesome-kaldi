@@ -23,10 +23,11 @@ Deep in the utils folder inside the wsj recipe there are some interesting script
 
 ## Good Kaldi "production ready" examples 
 There are some open-source projects around that use Kaldi as a platform for building an ASR systems for real-time usage. by seeing those projects you can learn a lot about how to implement such system of you own.
-1. [kaldi-gstreamer-server](https://github.com/alumae/kaldi-gstreamer-server) - this is a nice project that will help you to integrate Kaldi toolkit and the [GStreamer framework](https://gstreamer.freedesktop.org/documentation/application-development/introduction/gstreamer.html), a popular framework that will help you to make a scalable ASR server
-2. [kaldi-offline-transcriber](https://github.com/alumae/kaldi-offline-transcriber) - A good example for a project that handles both training and decoding. It is being build for Estonian but can be easily transformed into any language.
-3. [compile Kaldi for android](http://jcsilva.github.io/2017/03/18/compile-kaldi-android/) - You can also compile the Kaldi project in a way that will work directly on android devices. That might not be a good idea with a heavy model, but can be used to more constrained models.
-4. [VBDiarization](https://github.com/Jamiroquai88/VBDiarization) - A good implementation of Speaker Diarization, it can be used with Kaldi pre-trained Xvector model.
+1. [online2-tcp-nnet3-decode-faster](https://github.com/kaldi-asr/kaldi/blob/master/src/online2bin/online2-tcp-nnet3-decode-faster.cc) - A new excutable that was [added](https://github.com/kaldi-asr/kaldi/pull/2938) to kaldi that creates a basic TCP server that can read the model and transcribe raw audio. **If you want an easy to implement solution just to check your models easily, you should probably start here.**
+2. [kaldi-gstreamer-server](https://github.com/alumae/kaldi-gstreamer-server) - this is a nice project that will help you to integrate Kaldi toolkit and the [GStreamer framework](https://gstreamer.freedesktop.org/documentation/application-development/introduction/gstreamer.html), a popular framework that will help you to make a scalable ASR server
+3. [kaldi-offline-transcriber](https://github.com/alumae/kaldi-offline-transcriber) - A good example for a project that handles both training and decoding. It is being build for Estonian but can be easily transformed into any language.
+4. [compile Kaldi for android](http://jcsilva.github.io/2017/03/18/compile-kaldi-android/) - You can also compile the Kaldi project in a way that will work directly on android devices. That might not be a good idea with a heavy model, but can be used to more constrained models.
+5. [VBDiarization](https://github.com/Jamiroquai88/VBDiarization) - A good implementation of Speaker Diarization, it can be used with Kaldi pre-trained Xvector model.
 
 ## Resources for understanding the math/science behind Kaldi better:
 1. [Speech Recognition with Weighted Finite-State Transducers](https://cs.nyu.edu/~mohri/pub/hbka.pdf) - The "bible" for understanding WFST-based systems for Speech recognition. **This should probably be your first read.**
