@@ -29,6 +29,7 @@ There are some open-source projects around that use Kaldi as a platform for buil
 4. [compile Kaldi for android](http://jcsilva.github.io/2017/03/18/compile-kaldi-android/) - You can also compile the Kaldi project in a way that will work directly on android devices. That might not be a good idea with a heavy model, but can be used to more constrained models.
 5. [VBDiarization](https://github.com/Jamiroquai88/VBDiarization) - A good implementation of Speaker Diarization, it can be used with Kaldi pre-trained Xvector model.
 6. [tf-kaldi-speaker](https://github.com/mycrazycracy/tf-kaldi-speaker) - A framework that combines TensorFlow and Kaldi in the context of speaker verification/identification tasks. The project has some pretrained model that were trained on huge datasets.
+7. [kaldi-adapt-lm](https://github.com/gooofy/kaldi-adapt-lm) - A tool that helps to adapt nnet3 chain models to a different language model.
 
 ## Resources for understanding the math/science behind Kaldi better:
 1. [Speech Recognition with Weighted Finite-State Transducers](https://cs.nyu.edu/~mohri/pub/hbka.pdf) - The "bible" for understanding WFST-based systems for Speech recognition. **This should probably be your first read.**
