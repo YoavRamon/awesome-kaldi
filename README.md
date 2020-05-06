@@ -32,6 +32,10 @@ There are some open-source projects around that use Kaldi as a platform for buil
 6. [tf-kaldi-speaker](https://github.com/mycrazycracy/tf-kaldi-speaker) - A framework that combines TensorFlow and Kaldi in the context of speaker verification/identification tasks. The project has some pretrained model that were trained on huge datasets.
 7. [kaldi-adapt-lm](https://github.com/gooofy/kaldi-adapt-lm) - A tool that helps to adapt nnet3 chain models to a different language model.
 
+## Available pretrained models:
+1. [Kaldi pretrained models](https://kaldi-asr.org/models.html) - The models trained on Kaldi website. In [english](https://kaldi-asr.org/models/m1), [Arabic](https://kaldi-asr.org/models/m9) and [mandarin](https://kaldi-asr.org/models/m11). They also recently added the [Librespeech SOTA model](https://kaldi-asr.org/models/m13).
+2. [Open source speech recognition recipe and corpus for building German acoustic models with Kaldi](https://github.com/uhh-lt/kaldi-tuda-de) - Trained on 700+- hours of german data. Gets updated from time to time.
+
 ## Resources for understanding the math/science behind Kaldi better:
 1. [Speech Recognition with Weighted Finite-State Transducers](https://cs.nyu.edu/~mohri/pub/hbka.pdf) - The "bible" for understanding WFST-based systems for Speech recognition. **This should probably be your first read.**
 2. [Semirings and WFST](https://www.youtube.com/watch?v=1aEinrlyp8w&list=PLxbPHSSMPBeicXAHVfyFvGfCywRCq39Mp) - A good small course (~3 hours) from Nanyang technological university that covers the idea of WFSTs in a really straight forward and visual way.
