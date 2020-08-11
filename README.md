@@ -6,8 +6,9 @@ This is a list of features, scripts, blogs and resources for better using Kaldi 
 2. [Kaldi for Dummies tutorial](http://kaldi-asr.org/doc/kaldi_for_dummies.html) - The basic tutorial in the Kaldi documentation. It is really good for "hands on" experience but it is not so well explained.
 3. [How to Train a Deep Neural Net Acoustic Model with Kaldi](http://jrmeyer.github.io/asr/2016/12/15/DNN-AM-Kaldi.html) - A tutorial by Josh Meyer for specifically running Kaldi with DNN
 4. [Building Speech Recognition Systems with the Kaldi Toolkit](https://www.clsp.jhu.edu/wp-content/uploads/2016/06/Building-Speech-Recognition-Systems-with-the-Kaldi-Toolkit.pdf) - This presentation is extremely long but also extremely helpful. Its the most complete source of information about the training process and its development.
-5. [Eleanor Chodroff Kaldi Tutorial](https://www.eleanorchodroff.com/tutorial/kaldi/) - A good in depth tutorial about the training process with a lot of code examples. 
+5. [Eleanor Chodroff Kaldi Tutorial](https://www.eleanorchodroff.com/tutorial/kaldi/) - A good in depth tutorial about the training process with a lot of code examples.
 6. [Speaker Diarization with Kaldi](https://towardsdatascience.com/speaker-diarization-with-kaldi-e30301b05cc8) - A tutorial about X-Vectors and Speaker Diarization.
+7. [Understanding a typical Kaldi Recipe](https://medium.com/@qianhwan/understanding-kaldi-recipes-with-mini-librispeech-example-part-1-hmm-models-472a7f4a0488) - A good article which explains what each stage of a mini_librispeech recipe does. 
 
 ## Good resources for more complex stuff:
 1. [Some Kaldi Notes](http://jrmeyer.github.io/asr/2016/02/01/Kaldi-notes.html) - Some advanced notes that is highly recommended to read if you want to be a more trained user.
@@ -20,7 +21,7 @@ Deep in the utils folder inside the wsj recipe there are some interesting script
 3. [resample_data_dir.sh](https://github.com/kaldi-asr/kaldi/blob/master/egs/wsj/s5/utils/data/resample_data_dir.sh) - You want to make a new model for different sampling rate but you don't want to manually re-sample you entire data? this script will help you to do it, again with a SoX command.
 4. [combine_data.sh](https://github.com/kaldi-asr/kaldi/blob/master/egs/wsj/s5/utils/combine_data.sh) - If you have multiple datasets and you want to combine all of the manually, there is no need to do it file after file. this script will take an entire data directory and will combine all the files into the same new directory.
 5. [summarize_logs.pl](https://github.com/kaldi-asr/kaldi/blob/master/egs/wsj/s5/utils/summarize_logs.pl) & [summarize_warnings.pl](https://github.com/kaldi-asr/kaldi/blob/master/egs/wsj/s5/utils/summarize_warnings.pl) - When you run a process in Kaldi with multiple jobs, each job will have different a log file. when you are using a lot of jobs it might be hard to look at all of those logs. those scripts will help you to summarize all of the logs into one readable file.
-6. [Finetune acoustic model](https://github.com/kaldi-asr/kaldi/blob/master/egs/rm/s5/local/chain/tuning/run_tdnn_wsj_rm_1a.sh) - If you don't have a lot of data You can always train a Kaldi model from the closest domain to your domain and then take the `final.mdl` file and finetune it with your data. 
+6. [Finetune acoustic model](https://github.com/kaldi-asr/kaldi/blob/master/egs/rm/s5/local/chain/tuning/run_tdnn_wsj_rm_1a.sh) - If you don't have a lot of data You can always train a Kaldi model from the closest domain to your domain and then take the `final.mdl` file and finetune it with your data.
 
 ## Good Kaldi "production ready" examples 
 There are some open-source projects around that use Kaldi as a platform for building an ASR systems for real-time usage. by seeing those projects you can learn a lot about how to implement such system of you own.
