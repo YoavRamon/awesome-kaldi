@@ -46,7 +46,7 @@ There are some open-source projects around that use Kaldi as a platform for buil
 5. [GMM Acoustic Modeling and Feature Extraction](https://web.stanford.edu/class/cs224s/lectures/224s.17.lec5.pdf) - A really good presentation by Andrew Maas for better understanding the GMM-based phoneme alignment.
 
 ## Important articles
-1. [The Kaldi Speech Recognition Toolkit](https://homepages.inf.ed.ac.uk/aghoshal/pubs/asru11-kaldi.pdf) *D. Povey et al., 2011* - The original article that described Kaldi and the different parts of the project. It should be noted that some parts of that article are outdated.
+1. [The Kaldi Speech Recognition Toolkit](https://raw.githubusercontent.com/kaldi-asr/kaldi/master/misc/papers/asru11_toolkit/kaldi_asru.pdf) *D. Povey et al., 2011* - The original article that described Kaldi and the different parts of the project. It should be noted that some parts of that article are outdated.
 2. [A time delay neural network architecture for efficient modeling of long
 temporal contexts](https://www.danielpovey.com/files/2015_interspeech_multisplice.pdf) *V. Peddinti, D. Povey, S. Khudanpur, 2015* - The article that describes the usage of TDNNs in Kaldi
 3. [Hybrid speech recognition with Deep Bidirectional LSTM](https://www.cs.toronto.edu/~graves/asru_2013.pdf) *A. Graves, N. Jaitly and A. Mohamed, 2013* - an article about the BLSTM basic recipe in Kaldi.
