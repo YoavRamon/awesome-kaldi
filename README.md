@@ -13,7 +13,7 @@ This is a list of features, scripts, blogs and resources for better using Kaldi 
 ## Good resources for more complex stuff:
 1. [Some Kaldi Notes](http://jrmeyer.github.io/asr/2016/02/01/Kaldi-notes.html) - Some advanced notes that is highly recommended to read if you want to be a more trained user.
 2. [Decoding graph construction in Kaldi: A visual walkthrough](http://vpanayotov.blogspot.com/2012/06/kaldi-decoding-graph-construction.html) - If you want to understand the different parts of the Decoding graph you should probably read this. It is required to understand those concepts for debugging your graph in the development of a new model.
-
+3. [Josh Meyer's Kaldi Documentation](http://jrmeyer.github.io/misc/kaldi-documentation/kaldi-documentation.pdf) An old yet succint Kaldi documenation which briefly explains the  commands(.cc files) within various shell scripts , which are actually responsible for the compuations.
 ## Good Utils
 Deep in the utils folder inside the wsj recipe there are some interesting scripts that helped me a lot during my work. Knowing all of them will probably help you a lot, here are some basic ones that you should probably start with:
 1. [perturb_data_dir_speed_3way.sh](https://github.com/kaldi-asr/kaldi/blob/master/egs/wsj/s5/utils/data/perturb_data_dir_speed_3way.sh) - this script will help you to change the speaking speed of different utterances without creating excess files. It does this by implementing an SoX command to your wav file and copying and editing all the other files in your folder. Using this script and also the next one is a must-have in most state-of-the-art systems and will help your model to generalize better.
@@ -23,6 +23,7 @@ Deep in the utils folder inside the wsj recipe there are some interesting script
 5. [summarize_logs.pl](https://github.com/kaldi-asr/kaldi/blob/master/egs/wsj/s5/utils/summarize_logs.pl) & [summarize_warnings.pl](https://github.com/kaldi-asr/kaldi/blob/master/egs/wsj/s5/utils/summarize_warnings.pl) - When you run a process in Kaldi with multiple jobs, each job will have different a log file. when you are using a lot of jobs it might be hard to look at all of those logs. those scripts will help you to summarize all of the logs into one readable file.
 6. [Finetune acoustic model](https://github.com/kaldi-asr/kaldi/blob/master/egs/rm/s5/local/chain/tuning/run_tdnn_wsj_rm_1a.sh) - If you don't have a lot of data You can always train a Kaldi model from the closest domain to your domain and then take the `final.mdl` file and finetune it with your data.
 7. [Kaldi-ONNX project by XiaoMi](https://github.com/XiaoMi/kaldi-onnx) - A project that helps transferring the Kaldi model into ONNX so you could easily use the model in different frameworks.
+8. [kaldifeat](https://github.com/csukuangfj/kaldifeat) A project for  Kaldi-compatible feature extraction with PyTorch, supporting CUDA, batch processing, chunk processing, and autograd with an C++ and Python API
 
 ## Good Kaldi "production ready" examples 
 There are some open-source projects around that use Kaldi as a platform for building an ASR systems for real-time usage. by seeing those projects you can learn a lot about how to implement such system of you own.
@@ -50,3 +51,4 @@ There are some open-source projects around that use Kaldi as a platform for buil
 2. [A time delay neural network architecture for efficient modeling of long
 temporal contexts](https://www.danielpovey.com/files/2015_interspeech_multisplice.pdf) *V. Peddinti, D. Povey, S. Khudanpur, 2015* - The article that describes the usage of TDNNs in Kaldi
 3. [Hybrid speech recognition with Deep Bidirectional LSTM](https://www.cs.toronto.edu/~graves/asru_2013.pdf) *A. Graves, N. Jaitly and A. Mohamed, 2013* - an article about the BLSTM basic recipe in Kaldi.
+4. [Sequence Modeling with CTC](https://distill.pub/2017/ctc/) Hannun, Distill, 2017- an intutive and visual guide to the Connectionist Temporal Classification algorithm used in speech recogntion.
